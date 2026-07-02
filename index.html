@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secret Spider-Man Repository</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bgm" loop preload="auto">
+    <source src="beauty-and-a-beat.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="boot" id="boot">
+    <div class="boot-card">
+      <div class="tiny">SYSTEM BOOT</div>
+      <h1>ACCESSING SECRET REPOSITORY...</h1>
+      <p>Loading GitHub interface...<br>Preparing terminal...<br>Decrypting invitation...</p>
+      <div class="load"><span></span></div>
+      <button id="startBtn">Start Mission + Play Music</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Beauty And A Beat is playing 🎵</div>
+
+  <main class="page">
+    <section class="github-card">
+      <div class="repo-top">
+        <div class="repo-name">hasrul / <strong>secret-spiderman-repository</strong> <span>Public</span></div>
+        <div class="repo-actions">
+          <button>Watch 1</button><button>Star 1</button><button>Fork 0</button>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="active">Code</div><div>Issues 0</div><div>Pull requests 0</div><div>Actions</div><div>Projects</div><div>Security</div>
+      </div>
+
+      <div class="repo-grid">
+        <div class="file-list">
+          <div class="branch">main branch</div>
+          <div><b>README.md</b><small>write invitation</small></div>
+          <div><b>mission.py</b><small>add movie logic</small></div>
+          <div><b>error.log</b><small>reveal final question</small></div>
+          <div><b>DO_NOT_OPEN.txt</b><small>hidden file</small></div>
+          <div><b>feelings.txt</b><small>easter egg</small></div>
+          <div><b>config.json</b><small>lock date</small></div>
+        </div>
+
+        <div class="readme">
+          <div class="label">README.md</div>
+          <h2>Invitation for you to come and join me watch a movie 🍿</h2>
+          <p>What's movie?!</p>
+          <p>You guess what movie it isssss?!</p>
+          <p>A new Spider-Man movie is coming soon, and I would love to watch it with you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="workarea">
+      <div class="vscode">
+        <div class="bar"><i></i><i></i><i></i><span>VS Code - secret-spiderman-repository</span></div>
+        <div class="editor">
+          <aside>
+            <button class="file active" data-file="mission">mission.py</button>
+            <button class="file" data-file="readme">README.md</button>
+            <button class="file" data-file="error">error.log</button>
+            <button class="file" data-file="secret">DO_NOT_OPEN.txt</button>
+            <button class="file" data-file="feelings">feelings.txt</button>
+            <button class="file" data-file="config">config.json</button>
+          </aside>
+          <pre id="code"></pre>
+        </div>
+      </div>
+
+      <div class="terminal-window">
+        <div class="bar"><i></i><i></i><i></i><span>hasrul@dev:~/secret-spiderman-repository</span></div>
+        <pre id="terminal"></pre>
+        <div class="choices" id="choices">
+          <button id="musicBtn">▶ Play / Pause Music</button>
+          <button id="yesBtn">[Y] ACCEPT MISSION</button>
+          <button id="noBtn">[N] RETRY LATER</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
